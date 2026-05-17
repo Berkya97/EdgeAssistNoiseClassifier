@@ -1,0 +1,2 @@
+# model.tflite, labels.txt, norm_params.json buraya kopyalanmalı.
+# train.py çalıştırıldıktan sonra proje kökündeki bu dosyaları assets'e kopyalayın.

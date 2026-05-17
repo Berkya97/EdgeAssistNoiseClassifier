@@ -1,0 +1,25 @@
+# UrbanSound8K - Environmental Sound Classification
+# Python 3.9+ önerilir
+
+# Veri işleme
+numpy>=1.24
+pandas>=2.0
+
+# Ses işleme - Mel Spectrogram çıkarma
+librosa>=0.9.0
+soundfile>=0.10.0   # librosa için gerekli (WAV okuma)
+
+# Derin öğrenme
+tensorflow>=2.10.0   # TFLite export için 2.10+
+
+# Ses augmentasyonu (opsiyonel, train.py manuel augmentation kullanıyor)
+# audiomentations>=0.30.0  # Manuel implementasyon tercih edildi
+
+# Cloud inference sunucusu (server.py)
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.0.0
+
+# Tez analizi ve grafikler (analyze_results.py)
+matplotlib>=3.7
+seaborn>=0.12

@@ -1,0 +1,35 @@
+# Gradle / Android build
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+.idea/
+captures/
+.cxx/
+
+# Kotlin
+.kotlin/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Runtime logs / metrik çıktıları
+adaptive_log.txt
+server_metrics.csv
+kararlı.csv
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE
+.vscode/
+*.swp

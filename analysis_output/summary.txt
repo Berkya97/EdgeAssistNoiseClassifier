@@ -1,0 +1,45 @@
+=================================================================
+TEZ ANALİZ ÖZETİ
+=================================================================
+
+[Veri Genel Bakış]
+- Toplam inference (warmup hariç): 6424
+- Edge: 2016 | Cloud: 1893 | Adaptive: 2515
+- Sessizlik oranı: %8.2
+- Toplam ölçüm süresi: ~28.4 dakika
+
+[Latency Karşılaştırması (sessizlik hariç, ms)]
+Mod         Ortalama    Medyan       P95       Min       Max
+------------------------------------------------------------
+Edge            35.9      34.0      44.0      31.0     101.0
+Cloud           81.8      63.0     121.7      45.0    5129.0
+Adaptive        89.7      73.0     206.9      31.0     625.0
+
+[Bandwidth (Cloud & Adaptive)]
+- Ortalama bytes_sent: 20.14 KB (20625 bytes)
+- Ortalama bytes_received: 75.2 bytes
+- 4 inference/sn varsayımıyla bandwidth: 80.56 KB/sn
+
+[Adaptive Karar Dağılımı]
+- Cloud seçimi: %91.7 (2305 adet)
+- Edge seçimi:  %8.3 (210 adet, sessizlik dahil)
+
+[Batarya Tüketimi]
+Mod         Süre(dk)     Baş.%     Bit.%        Δ%      %/dk
+------------------------------------------------------------
+Edge             8.4       100        98        -2     -0.24
+Cloud            7.9        98        97        -1     -0.13
+Adaptive        10.5        97        95        -2     -0.19
+
+[Akademik Tez Bulguları]
+1. Edge ortalama latency: 35.9 ms
+2. Cloud ortalama latency: 81.8 ms (Edge'e göre 2.3x daha yavaş)
+3. Cloud bandwidth: 80.56 KB/sn (inference başına 20.14 KB)
+4. Adaptive WiFi'de %91.7 cloud seçti, %8.3 edge seçti
+5. Edge tahmini enerji: -0.24 %/dk ≈ 1587 mW (3000 mAh × 3.7V batarya varsayımı)
+6. Cloud tahmini enerji: -0.13 %/dk ≈ 845 mW
+7. Adaptive tahmini enerji: -0.19 %/dk ≈ 1271 mW
+
+=================================================================
+Grafikler analysis_output/ klasöründe.
+=================================================================
