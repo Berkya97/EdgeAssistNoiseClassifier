@@ -2,7 +2,7 @@
 
 Mobil cihazda **Edge (on-device TFLite)**, **Cloud (FastAPI inference server)** ve **Adaptive** çalışma modlarını karşılaştıran çevresel ses sınıflandırma sistemi. UrbanSound8K üzerinde eğitilmiş 64×30 Mel-Spectrogram tabanlı bir CNN modelini Android tarafında TFLite ile, sunucu tarafında ise aynı `.tflite` ağırlığıyla servis ederek **latency**, **bandwidth**, **batarya** ve **doğruluk** ölçümlerini almak için tasarlandı.
 
-> Lisans tezi kapsamında geliştirilmiştir.
+> Mobil Programlama dersi kapsamında geliştirilmiştir.
 
 ---
 
